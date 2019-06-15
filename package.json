@@ -2,7 +2,7 @@
   "name": "QUIUC",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://quiuc.github.io/www/",
+  "homepage": "https://www.quiuc.org",
   "dependencies": {
     "@material-ui/core": "^4.1.1",
     "gh-pages": "^2.0.1",
