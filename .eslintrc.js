@@ -4,7 +4,10 @@ module.exports = {
     'es6': true,
     'node': true,
   },
-  'extends': 'google',
+  'extends': [
+    'eslint:recommended',
+    'plugin:react/recommended'
+  ],
   'globals': {
     'Atomics': 'readonly',
     'SharedArrayBuffer': 'readonly',
@@ -17,8 +20,7 @@ module.exports = {
     'sourceType': 'module',
   },
   'plugins': [
-    'react',
-    'require-jsdoc-except'
+    'react'
   ],
   'rules': {
   },
