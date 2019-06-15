@@ -18,6 +18,7 @@ module.exports = {
   },
   'plugins': [
     'react',
+    'require-jsdoc-except'
   ],
   'rules': {
   },
