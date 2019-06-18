@@ -1,13 +1,15 @@
 # www
 
 ## Stack
+
 - React
-- Next.js for routing
+- React-router for routing.
 - Material UI as a UI Kit
 - (Anime.js?) Animation Library
-- eslint Google/Prettier 
+- eslint Google/Prettier
 - AWS Backend as Applicable
 - Github Pages Front End deployment
+- Use yarn instead of npm for package management cli.
 
 ## Pages
 
@@ -21,9 +23,9 @@
 ### About
 
 - Simple text page listing the org goals
--- General
--- Projects
--- Education
+  -- General
+  -- Projects
+  -- Education
 - How to get involved/contact info
 
 ### Members
@@ -35,7 +37,7 @@
 ### Calendar
 
 - Use some form of a calendar library for this
-- Fetch calendar data from backend 
+- Fetch calendar data from backend
 - Lists all quantum events at UIUC
 
 ### Projects (TBD)
@@ -43,8 +45,7 @@
 - Listing of org projects
 
 ### Resources (TBD)
+
 - Aggregation of site resources
-
-
 
 ### How
