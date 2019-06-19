@@ -1,0 +1,37 @@
+.headerContainer {
+    height: 86px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerLogo {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5vw;
+    max-height: 54px;
+    min-height: 36px;
+}
+
+.headerLinks {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerLink {
+    color: #fff;
+    margin: 0px calc(1em + 1vw);
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+}
