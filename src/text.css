@@ -12,8 +12,18 @@ p {
 	margin: 0;
 }
 
+.orangeHighlight {
+	color: #c96542;
+}
+
 @media (max-width: 650px) {
 	h1 {
 		font-size: 1.8em;
+	}
+}
+
+@media (max-height: 570px) {
+	h1 {
+		font-size: 1.5em;
 	}
 }
