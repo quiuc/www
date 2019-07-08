@@ -11,3 +11,9 @@ p {
 	text-align: left;
 	margin: 0;
 }
+
+@media (max-width: 650px) {
+	h1 {
+		font-size: 1.8em;
+	}
+}

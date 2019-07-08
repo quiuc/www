@@ -1,6 +1,5 @@
 .hero {
 	box-sizing: border-box;
-	padding: 0px 10vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -21,4 +20,17 @@
 	width: 38vw;
 	height: 38vw;
 	margin-left: 6vw;
+}
+
+@media (max-width: 800px) {
+	.hero {
+		flex-direction: column-reverse;
+	}
+
+	.heroBlochSphere {
+		width: 86%;
+		height: auto;
+		margin-left: 0;
+		margin-bottom: 2em;
+	}
 }

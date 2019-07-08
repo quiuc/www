@@ -45,3 +45,32 @@
 	font-weight: 700;
 	cursor: pointer;
 }
+
+@media (max-width: 650px) {
+	.headerContainer {
+		height: 74px;
+		justify-content: flex-end;
+	}
+	.headerLinks {
+		justify-content: flex-end;
+		margin-right: 0.8em;
+	}
+	.headerLink {
+		margin: 0px 0.6em;
+	}
+}
+
+@media (max-width: 540px) {
+	.headerContainer {
+		height: 64px;
+	}
+	.headerLogo {
+		left: 1em;
+	}
+}
+
+@media (max-width: 400px) {
+	.headerLink {
+		font-size: 0.85em;
+	}
+}

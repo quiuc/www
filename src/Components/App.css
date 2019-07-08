@@ -5,4 +5,11 @@
 .sectionContainer {
 	width: 100vw;
 	height: calc(100vh - 86px);
+	padding: 0px 10vw;
+}
+
+@media (max-width: 650px) {
+	.sectionContainer {
+		padding: 0px 4.4vw;
+	}
 }
