@@ -8,17 +8,13 @@ const Header = props => {
         <div className="headerContainer">
             <img className="headerLogo" src="assets/logo.svg" alt="QUIUC" />
             <li className="headerLinks">
-                <Link>
+                <Link to="people">
                     <div className="headerLink">People</div>
                 </Link>
-                <Link>
-                    <div className="headerLink">Workshops</div>
-                </Link>
-
-                <Link>
+                <Link to="calendar">
                     <div className="headerLink">Calendar</div>
                 </Link>
-                <Link>
+                <Link to="contact">
                     <div className="headerLink">Contact</div>
                 </Link>
             </li>
