@@ -1,0 +1,24 @@
+.hero {
+	box-sizing: border-box;
+	padding: 0px 10vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.heroTitleArea {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: flex-start;
+}
+
+.heroButtonPositioner {
+	margin-top: 1.7rem;
+}
+
+.heroBlochSphere {
+	width: 38vw;
+	height: 38vw;
+	margin-left: 6vw;
+}

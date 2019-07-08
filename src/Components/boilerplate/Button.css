@@ -1,0 +1,32 @@
+.button {
+	padding: 0.7em 2.4em;
+	background-color: rgba(201, 101, 66, 0.18);
+	border-radius: 10000px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: opacity 0.08s ease-out;
+	filter: drop-shadow(0px 0px 18px #000000);
+	-webkit-filter: drop-shadow(0px 0px 18px #000000);
+	-moz-filter: drop-shadow(0px 0px 18px #000000);
+}
+
+.button:hover {
+	opacity: 0.7;
+}
+
+.button:active {
+	opacity: 0.4;
+}
+
+.buttonText {
+	font-weight: 700;
+	font-size: 1em;
+	color: #c96542;
+	letter-spacing: 0.08em;
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none;
+}
