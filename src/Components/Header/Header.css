@@ -67,6 +67,9 @@
 	.headerLogo {
 		left: 1em;
 	}
+	.peopleLink {
+		display: none;
+	}
 }
 
 @media (max-width: 400px) {
