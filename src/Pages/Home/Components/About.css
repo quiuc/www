@@ -1,0 +1,11 @@
+.aboutSection {
+	margin-bottom: 6em;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+.aboutButtonSpacing {
+	height: 1.4em;
+}

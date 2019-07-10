@@ -4,14 +4,14 @@
 
 .sectionContainer {
 	width: 100vw;
-	height: calc(100vh - 86px);
+	min-height: calc(100vh - 86px);
+	height: auto;
 	padding: 0px 10vw;
 	box-sizing: border-box;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
 	.sectionContainer {
-		height: auto;
-		padding: 0px 4.4vw 6vh 4.4vw;
+		padding: 0px 4.4vw 8vh 4.4vw;
 	}
 }
