@@ -1,0 +1,26 @@
+.contactSectionContainer {
+	width: 100vw;
+	height: auto;
+	padding: 0px 10vw 14vw 10vw;
+	box-sizing: border-box;
+}
+
+.contactSections {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.contactSection {
+	display: flex;
+	flex-direction: column;
+}
+
+.contactRow {
+	margin: 0.24em 0px;
+}
+
+.socialContact {
+	text-align: right;
+}

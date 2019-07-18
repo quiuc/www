@@ -1,0 +1,49 @@
+.hero {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.heroTitleArea {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: flex-start;
+}
+
+.heroButtonPositioner {
+	margin-top: 1.7rem;
+}
+
+.heroBlochSphere {
+	width: 38vw;
+	height: 38vw;
+	margin-left: 6vw;
+}
+
+@media (max-width: 800px) {
+	.hero {
+		flex-direction: column-reverse;
+	}
+
+	.heroBlochSphere {
+		width: 86%;
+		height: auto;
+		margin-left: 0;
+		margin-bottom: 2em;
+	}
+}
+
+@media (max-height: 570px) {
+	.hero {
+		flex-direction: column;
+	}
+
+	.heroBlochSphere {
+		width: 86%;
+		height: auto;
+		margin-left: 0;
+		margin-top: 2em;
+	}
+}
