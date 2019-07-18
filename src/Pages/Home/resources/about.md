@@ -16,6 +16,3 @@ interested in giving tech talks, collaborating with our groups, or supporting ou
 end mission.
 
 &nbsp;
-
-If you would like to get involved or just want more information,
-[get in touch](www.quiuc.org/contact).
