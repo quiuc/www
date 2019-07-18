@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, forwardRef } from 'react';
 import Markdown from 'react-markdown';
 
 import './About.css';
@@ -7,7 +7,7 @@ import workshopsMdRef from '../resources/workshops.md';
 import researchMdRef from '../resources/research.md';
 import Button from '../../../Components/boilerplate/Button';
 
-const About = () => {
+const About = (props, ref) => {
 	const [aboutMd, setAboutMd] = useState(null);
 	const [workshopsMd, setWorkshopsMd] = useState(null);
 	const [researchMd, setResearchMd] = useState(null);
@@ -28,7 +28,7 @@ const About = () => {
 
 	return (
 		<>
-			<div className="sectionContainer">
+			<div ref={ref} className="sectionContainer">
 				<div className="aboutSection">
 					<Markdown source={aboutMd} />
 				</div>
@@ -47,4 +47,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default forwardRef(About);
