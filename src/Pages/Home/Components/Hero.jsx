@@ -4,21 +4,21 @@ import './Hero.css';
 import Button from '../../../Components/boilerplate/Button';
 
 const Hero = () => {
-    return (
-        <div className="hero sectionContainer">
-            <div className="heroTitleArea">
-                <h1>
-                    The first and only undergraduate quantum computing organization at the{' '}
-                    <span className="orangeHighlight">University of Illinois</span>
-                </h1>
-                <p>Aiming to eliminate the barrier of entry into the field for students of all backgrounds.</p>
-                <div className="heroButtonPositioner">
-                    <Button text="Join Us" link="https://quiuc.slack.com" />
-                </div>
-            </div>
-            <img className="heroBlochSphere" src="/assets/blochSphere.png" alt="" />
-        </div>
-    );
+	return (
+		<div className="hero sectionContainer">
+			<div className="heroTitleArea">
+				<h1>
+					The first and only undergraduate quantum computing organization at the{' '}
+					<span className="orangeHighlight">University of Illinois</span>
+				</h1>
+				<p>Aiming to eliminate the barrier of entry into the field for students of all backgrounds.</p>
+				<div className="heroButtonPositioner">
+					<Button text="Join Us" link="https://quiuc.slack.com" />
+				</div>
+			</div>
+			<img className="heroBlochSphere" src="/assets/blochSphere.png" alt="" />
+		</div>
+	);
 };
 
 export default Hero;

@@ -4,7 +4,6 @@
   "private": false,
   "homepage": "https://www.quiuc.org",
   "dependencies": {
-    "@material-ui/core": "^4.1.1",
     "gh-pages": "^2.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -19,7 +18,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "lint": "eslint --fix \"src/**/*.js*\" && prettier --write \"src/**/*.js*\"",
+    "commit": "npm run lint && git add . && git commit && git push"
   },
   "eslintConfig": {
     "extends": "react-app"

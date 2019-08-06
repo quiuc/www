@@ -9,14 +9,14 @@ const Person = props => {
 		<div className="personCard">
 			<img className="personImage" src={props.imageSrc} alt={props.name} />
 			<h4 className="personName">{props.name}</h4>
-			<div className="personRole">{props.role}</div>
+			<div className="personRole">{props.position}</div>
 		</div>
 	);
 };
 
 Person.propTypes = {
 	name: PropTypes.string,
-	role: PropTypes.string,
+	position: PropTypes.string,
 	imageSrc: PropTypes.string
 };
 

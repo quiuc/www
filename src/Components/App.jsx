@@ -7,14 +7,14 @@ import Workshops from '../Pages/Workshops/Workshops';
 import './App.css';
 
 function App() {
-    return (
-        <div className="App">
-            <Router>
-                <Route path={['/', '/home', '/about', '/people', '/calendar', '/contact']} component={Home} />
-                <Route path="/workshops" component={Workshops} />
-            </Router>
-        </div>
-    );
+	return (
+		<div className="App">
+			<Router>
+				<Route path={['/', '/home', '/about', '/people', '/calendar', '/contact']} component={Home} />
+				<Route path="/workshops" component={Workshops} />
+			</Router>
+		</div>
+	);
 }
 
 export default App;

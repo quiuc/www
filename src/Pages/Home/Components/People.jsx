@@ -8,11 +8,11 @@ const People = (props, ref) => {
 		<div ref={ref} className="peopleSection sectionContainer">
 			<h1>People</h1>
 			<div className="peopleList">
-				<Person name="Bailey Tincher" role="President" imageSrc="/assets/people/bailey.jpg" />
-				<Person name="Guangkuo Liu" role="Education Team Chair" imageSrc="/assets/people/guangkuo.jpg" />
-				<Person name="Léo Loubières" role="Education Team Co-Chair" imageSrc="/assets/people/leo.jpg" />
-				<Person name="Tracy Tang" role="Outreach Chair" imageSrc="/assets/people/tracy.jpg" />
-				<Person name="Jenn Mueng" role="Web Development" imageSrc="/assets/people/jenn.jpg" />
+				<Person name="Bailey Tincher" position="President" imageSrc="/assets/people/bailey.jpg" />
+				<Person name="Guangkuo Liu" position="Education Team Chair" imageSrc="/assets/people/guangkuo.jpg" />
+				<Person name="Léo Loubières" position="Education Team Co-Chair" imageSrc="/assets/people/leo.jpg" />
+				<Person name="Tracy Tang" position="Outreach Chair" imageSrc="/assets/people/tracy.jpg" />
+				<Person name="Jenn Mueng" position="Web Development" imageSrc="/assets/people/jenn.jpg" />
 			</div>
 		</div>
 	);

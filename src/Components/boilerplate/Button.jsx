@@ -8,24 +8,24 @@ import './Button.css';
 */
 
 const Button = props => {
-    const onClick = () => {
-        if (typeof props.link === 'string') {
-            window.location.href = props.link;
-        } else if (typeof props.action === 'function') {
-            props.action();
-        }
-    };
-    return (
-        <div className="button" onClick={onClick}>
-            <div className="buttonText">{props.text}</div>
-        </div>
-    );
+	const onClick = () => {
+		if (typeof props.link === 'string') {
+			window.location.href = props.link;
+		} else if (typeof props.action === 'function') {
+			props.action();
+		}
+	};
+	return (
+		<div className="button" onClick={onClick}>
+			<div className="buttonText">{props.text}</div>
+		</div>
+	);
 };
 
 Button.propTypes = {
-    action: PropTypes.func, // will open link if it is a string, call function if function.
-    link: PropTypes.string,
-    text: PropTypes.string.isRequired
+	action: PropTypes.func, // will open link if it is a string, call function if function.
+	link: PropTypes.string,
+	text: PropTypes.string.isRequired
 };
 
 export default Button;
