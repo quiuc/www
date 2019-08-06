@@ -13,10 +13,10 @@ const Header = props => {
 				<Link to="about">
 					<div className="headerLink">About</div>
 				</Link>
-				{/*<Link to="people">
+				<Link to="people">
 					<div className="peopleLink headerLink">People</div>
 				</Link>
-				<Link to="calendar">
+				{/*<Link to="calendar">
 					<div className="headerLink">Calendar</div>
 	</Link> */}
 				<Link to="contact">

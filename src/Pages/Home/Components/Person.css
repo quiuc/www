@@ -1,0 +1,44 @@
+.personCard {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 0 0.8em;
+}
+
+.personImage {
+	width: 100%;
+	display: flex;
+	border-radius: 1.2vw;
+}
+
+.personName {
+	margin-top: 0.6em;
+	margin-bottom: 0.1em;
+	font-size: 1em;
+	text-align: left;
+}
+
+.personRole {
+	font-size: 0.8em;
+	opacity: 0.65;
+	letter-spacing: 0.03em;
+	text-align: left;
+}
+
+@media (max-width: 730px) {
+	.personCard {
+		flex-basis: 28%;
+		max-width: 30%;
+		margin-bottom: 1em;
+	}
+}
+
+@media (max-width: 650px) {
+	.personCard {
+		flex-basis: 40%;
+		max-width: 44%;
+		margin-bottom: 1em;
+	}
+}

@@ -1,0 +1,22 @@
+.peopleSection {
+	min-height: 0 !important;
+	margin-bottom: 6em;
+}
+
+.peopleList {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-direction: row;
+	padding: 0px -0.8em;
+}
+
+@media (max-width: 730px) {
+	.peopleSection {
+		margin-bottom: 1em;
+	}
+	.peopleList {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}

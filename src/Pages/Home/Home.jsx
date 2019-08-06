@@ -5,6 +5,7 @@ import './Home.css';
 import Header from '../../Components/Header/Header';
 import Hero from './Components/Hero';
 import About from './Components/About';
+import People from './Components/People';
 import Contact from './Components/Contact';
 
 const Home = props => {
@@ -12,12 +13,18 @@ const Home = props => {
 	const routeName = props.location.pathname.split('/')[1];
 
 	const aboutRef = useRef(null);
+	const peopleRef = useRef(null);
 	const contactRef = useRef(null);
 
 	useEffect(() => {
 		switch (routeName) {
 			case 'about': {
 				aboutRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
+				window.scrollBy(0, -86); // offset header height
+				break;
+			}
+			case 'people': {
+				peopleRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
 				window.scrollBy(0, -86); // offset header height
 				break;
 			}
@@ -38,6 +45,7 @@ const Home = props => {
 			<div className="headerOffset" />
 			<Hero />
 			<About ref={aboutRef} />
+			<People ref={peopleRef} />
 			<Contact ref={contactRef} />
 		</div>
 	);
