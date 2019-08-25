@@ -6,6 +6,7 @@ import Header from '../../Components/Header/Header';
 import Hero from './Components/Hero';
 import About from './Components/About';
 import People from './Components/People';
+import Calendar from './Components/Calendar';
 import Contact from './Components/Contact';
 
 const Home = props => {
@@ -14,6 +15,7 @@ const Home = props => {
 
 	const aboutRef = useRef(null);
 	const peopleRef = useRef(null);
+	const calendarRef = useRef(null);
 	const contactRef = useRef(null);
 
 	useEffect(() => {
@@ -25,6 +27,11 @@ const Home = props => {
 			}
 			case 'people': {
 				peopleRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
+				window.scrollBy(0, -86); // offset header height
+				break;
+			}
+			case 'calendar': {
+				calendarRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
 				window.scrollBy(0, -86); // offset header height
 				break;
 			}
@@ -46,6 +53,7 @@ const Home = props => {
 			<Hero />
 			<About ref={aboutRef} />
 			<People ref={peopleRef} />
+			<Calendar ref={calendarRef} />
 			<Contact ref={contactRef} />
 		</div>
 	);
