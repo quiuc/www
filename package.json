@@ -25,7 +25,7 @@
 		"eject": "react-scripts eject",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build",
-		"lint": "eslint --fix \"src/**/*.js*\" && prettier --write \"src/**/*.js*\"",
+		"lint": "eslint --fix \"src/**/*.jsx\" && prettier --write \"src/**/*.jsx\"",
 		"commit": "npm run lint && git add . && git commit && git push"
 	},
 	"eslintConfig": {
