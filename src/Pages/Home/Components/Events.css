@@ -1,0 +1,32 @@
+.eventsContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10vh;
+}
+
+.noUpcomingEventsText {
+	color: rgba(255, 255, 255, 0.4);
+	margin-top: 3em;
+}
+
+.eventSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.pastEvents {
+}
+
+.upcomingEvents {
+}
+
+@media (max-width: 650px) {
+	.fc-title {
+		font-size: 0.8em;
+	}
+}

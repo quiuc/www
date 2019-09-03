@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, createContext } from 'react';
+import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import './Home.css';
@@ -6,9 +6,9 @@ import Header from '../../Components/Header/Header';
 import Hero from './Components/Hero';
 import About from './Components/About';
 import People from './Components/People';
-import Calendar from './Components/Calendar';
+import Events from './Components/Events';
 import Contact from './Components/Contact';
-import PopupOverlay, { popupContext } from '../../Components/boilerplate/Popup';
+import PopupOverlay from '../../Components/boilerplate/Popup';
 
 const Home = props => {
 	// use the routeName to determine where to scroll to.
@@ -16,7 +16,7 @@ const Home = props => {
 
 	const aboutRef = useRef(null);
 	const peopleRef = useRef(null);
-	const calendarRef = useRef(null);
+	const eventsRef = useRef(null);
 	const contactRef = useRef(null);
 
 	useEffect(() => {
@@ -31,8 +31,8 @@ const Home = props => {
 				window.scrollBy(0, -86); // offset header height
 				break;
 			}
-			case 'calendar': {
-				calendarRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
+			case 'events': {
+				eventsRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
 				window.scrollBy(0, -86); // offset header height
 				break;
 			}
@@ -55,7 +55,7 @@ const Home = props => {
 				<Hero />
 				<About ref={aboutRef} />
 				<People ref={peopleRef} />
-				<Calendar ref={calendarRef} />
+				<Events ref={eventsRef} />
 				<Contact ref={contactRef} />
 			</PopupOverlay>
 		</div>

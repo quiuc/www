@@ -16,8 +16,8 @@ const Header = () => {
 				<Link to="people">
 					<div className="peopleLink headerLink">People</div>
 				</Link>
-				<Link to="calendar">
-					<div className="headerLink">Calendar</div>
+				<Link to="events">
+					<div className="headerLink">Events</div>
 				</Link>
 				<Link to="contact">
 					<div className="headerLink">Contact</div>
