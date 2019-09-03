@@ -1,8 +1,10 @@
 {
 	"events": [
 		{
+			"id": "1",
 			"title": "First General Meeting",
 			"date": "2019-09-01T16:00:00-05:00",
+			"description": "Learn more about QUIUC, our open leadership positions, and what you can do to participate.",
 			"location": {
 				"text": "Siebel Room 1105"
 			}
