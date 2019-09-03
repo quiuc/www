@@ -8,6 +8,7 @@
 		"@fullcalendar/daygrid": "^4.3.0",
 		"@fullcalendar/react": "^4.3.0",
 		"gh-pages": "^2.0.1",
+		"moment": "^2.24.0",
 		"node-sass": "^4.12.0",
 		"prop-types": "^15.7.2",
 		"react": "^16.9.0",
