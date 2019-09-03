@@ -8,7 +8,7 @@ const PopupOverlay = props => {
 	const hidePopup = () => {
 		setPopupState({ renderPopup: () => null, popupExists: false });
 	};
-	const setPopup = renderPopup =>
+	const displayPopup = renderPopup =>
 		setPopupState({
 			renderPopup,
 			popupExists: true
@@ -24,7 +24,7 @@ const PopupOverlay = props => {
 		<PopupContext.Provider
 			value={{
 				...popupState,
-				setPopup,
+				displayPopup,
 				hidePopup
 			}}
 		>
@@ -43,7 +43,7 @@ PopupOverlay.propTypes = {
 };
 
 export const PopupContext = createContext({
-	setPopup: () => {},
+	displayPopup: () => {},
 	hidePopup: () => {},
 	renderPopup: () => null,
 	popupExists: false
