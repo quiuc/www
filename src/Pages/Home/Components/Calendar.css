@@ -32,6 +32,12 @@
 	padding: 0.2em 0.3em;
 }
 
+.boot {
+	background-color: white;
+	width: 300px;
+	height: 450px;
+}
+
 @media (max-width: 650px) {
 	.fc-title {
 		font-size: 0.8em;

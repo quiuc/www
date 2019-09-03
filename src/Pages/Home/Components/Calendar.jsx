@@ -4,6 +4,8 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 
 import './Calendar.css';
 import { events } from '../resources/events.json';
+import Button from '../../../Components/boilerplate/Button';
+import { PopupContext } from '../../../Components/boilerplate/Popup';
 
 const Calendar = (props, ref) => {
 	return (
@@ -20,6 +22,9 @@ const Calendar = (props, ref) => {
 					info.el.append(descElement);
 				}}
 			/>
+			<PopupContext.Consumer>
+				{({ setPopup }) => <Button text="Hey" action={() => setPopup(() => <div className="boot" />)} />}
+			</PopupContext.Consumer>
 		</div>
 	);
 };

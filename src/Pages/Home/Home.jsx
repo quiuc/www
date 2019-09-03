@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, createContext } from 'react';
 import PropTypes from 'prop-types';
 
 import './Home.css';
@@ -8,6 +8,7 @@ import About from './Components/About';
 import People from './Components/People';
 import Calendar from './Components/Calendar';
 import Contact from './Components/Contact';
+import PopupOverlay, { popupContext } from '../../Components/boilerplate/Popup';
 
 const Home = props => {
 	// use the routeName to determine where to scroll to.
@@ -47,14 +48,16 @@ const Home = props => {
 
 	return (
 		<div className="screenContainer">
-			<div className="background" />
-			<Header />
-			<div className="headerOffset" />
-			<Hero />
-			<About ref={aboutRef} />
-			<People ref={peopleRef} />
-			<Calendar ref={calendarRef} />
-			<Contact ref={contactRef} />
+			<PopupOverlay>
+				<div className="background" />
+				<Header />
+				<div className="headerOffset" />
+				<Hero />
+				<About ref={aboutRef} />
+				<People ref={peopleRef} />
+				<Calendar ref={calendarRef} />
+				<Contact ref={contactRef} />
+			</PopupOverlay>
 		</div>
 	);
 };
