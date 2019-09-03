@@ -4,15 +4,21 @@
 	"private": false,
 	"homepage": "https://www.quiuc.org",
 	"dependencies": {
-		"@fullcalendar/core": "^4.3.1",
-		"@fullcalendar/daygrid": "^4.3.0",
-		"@fullcalendar/react": "^4.3.0",
-		"gh-pages": "^2.0.1",
+		"gatsby": "^2.15.5",
+		"gatsby-image": "^2.2.16",
+		"gatsby-plugin-manifest": "^2.2.13",
+		"gatsby-plugin-offline": "^2.2.10",
+		"gatsby-plugin-react-helmet": "^3.1.6",
+		"gatsby-plugin-sharp": "^2.2.19",
+		"gatsby-source-filesystem": "^2.1.19",
+		"gatsby-transformer-sharp": "^2.2.13",
+		"gh-pages": "^2.1.1",
 		"moment": "^2.24.0",
 		"node-sass": "^4.12.0",
 		"prop-types": "^15.7.2",
 		"react": "^16.9.0",
 		"react-dom": "^16.9.0",
+		"react-helmet": "^5.2.1",
 		"react-markdown": "^4.1.0",
 		"react-router-dom": "^5.0.1",
 		"react-scripts": "^3.1.1",
@@ -20,14 +26,14 @@
 		"webpack": "4.39.1"
 	},
 	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"predeploy": "npm run build",
+		"build": "gatsby build",
+		"develop": "gatsby develop",
+		"format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+		"start": "yarn develop",
+		"serve": "gatsby serve",
+		"predeploy": "yarn build",
 		"deploy": "gh-pages -d build",
-		"lint": "eslint --fix \"src/**/*.jsx\" && prettier --write \"src/**/*.jsx\"",
-		"commit": "npm run lint && git add . && git commit && git push"
+		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
 	},
 	"eslintConfig": {
 		"extends": "react-app"
