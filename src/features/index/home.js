@@ -1,14 +1,15 @@
-import React, { useRef, useEffect } from './node_modules/react';
-import PropTypes from './node_modules/prop-types';
+import React, { useRef, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 
 import './Home.css';
-import Header from '../../Components/Header/Header';
-import Hero from './Components/Hero';
-import About from './Components/About';
-import People from './Components/People';
-import Events from './Components/Events';
-import Contact from './Components/Contact';
-import PopupOverlay from '../../Components/boilerplate/Popup';
+import Header from '../../components/Header/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import People from './components/People';
+import Events from './components/Events';
+import Contact from './components/Contact';
+import PopupOverlay from '../../components/boilerplate/Popup';
 
 const Home = props => {
 	// use the routeName to determine where to scroll to.
@@ -67,5 +68,19 @@ Home.propTypes = {
 		pathname: PropTypes.string.isRequired
 	}
 };
+
+export const query = graphql`
+	query {
+		allMarkdownRemark {
+			totalCount
+			edges {
+				node {
+					id
+					excerpt
+				}
+			}
+		}
+	}
+`;
 
 export default Home;

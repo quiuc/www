@@ -1,6 +1,5 @@
 import React, { useState, useEffect, forwardRef } from 'react';
-import Markdown from 'react-markdown';
-import { Link } from 'react-router-dom';
+import { graphql } from 'gatsby';
 
 import './About.css';
 /* import aboutMdRef from '../resources/about.md';
@@ -9,11 +8,12 @@ import researchMdRef from '../resources/research.md'; */
 // import Button from '../../../Components/boilerplate/Button';
 
 const About = (props, ref) => {
+	console.log(props);
 	const [aboutMd, setAboutMd] = useState(null);
 	const [workshopsMd, setWorkshopsMd] = useState(null);
 	const [researchMd, setResearchMd] = useState(null);
 
-	useEffect(() => {
+	/* useEffect(() => {
 		fetch(aboutMdRef)
 			.then(md => md.text())
 			.then(text => setAboutMd(text));
@@ -25,12 +25,12 @@ const About = (props, ref) => {
 		fetch(researchMdRef)
 			.then(md => md.text())
 			.then(text => setResearchMd(text));
-	});
+	}); */
 
 	return (
 		<>
 			<div ref={ref} className="sectionContainer">
-				<div className="aboutSection">
+				{/* <div className="aboutSection">
 					<Markdown source={aboutMd} />
 					<p>
 						If you would like to get involved or just want more information,{' '}
@@ -39,14 +39,12 @@ const About = (props, ref) => {
 				</div>
 				<div className="aboutSection">
 					<Markdown source={workshopsMd} />
-					{/* <div className="aboutButtonSpacing" />
-					<Button text="Check out our workshops" /> */}
+		
 				</div>
 				<div className="aboutSection">
 					<Markdown source={researchMd} />
-					{/* <div className="aboutButtonSpacing" />
-					<Button text="Check out our projects" /> */}
-				</div>
+					
+				</div> */}
 			</div>
 		</>
 	);

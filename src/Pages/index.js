@@ -1,5 +1,3 @@
-import React from 'react';
+import Home from '../features/index/home';
 
-import App from '../Components/App';
-
-export default App;
+export default Home;

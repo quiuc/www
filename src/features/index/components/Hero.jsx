@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Hero.css';
-import Button from '../../../Components/boilerplate/Button';
+import Button from '../../../components/boilerplate/Button';
 
 const Hero = () => {
 	return (
