@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import Home from '../Pages/Home/Home';
-import Workshops from '../Pages/Workshops/Workshops';
+import Home from '../pages/Home/Home';
 
 import './App.css';
 
@@ -11,7 +10,6 @@ function App() {
 		<div className="App">
 			<Router>
 				<Route path={['/', '/home', '/about', '/people', '/calendar', '/contact']} component={Home} />
-				<Route path="/workshops" component={Workshops} />
 			</Router>
 		</div>
 	);

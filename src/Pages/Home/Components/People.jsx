@@ -8,9 +8,9 @@ const People = (props, ref) => {
 		<div ref={ref} className="peopleSection sectionContainer">
 			<h1>People</h1>
 			<div className="peopleList">
-				<Person name="Bailey Tincher" position="President" imageSrc="/assets/people/bailey.jpg" />
-				<Person name="Guangkuo Liu" position="Education Committee" imageSrc="/assets/people/guangkuo.jpg" />
-				<Person name="Jenn Mueng" position="Web Development" imageSrc="/assets/people/jenn.jpg" />
+				<Person name="Bailey Tincher" position="President" imageSrc="/people/bailey.jpg" />
+				<Person name="Guangkuo Liu" position="Education Committee" imageSrc="/people/guangkuo.jpg" />
+				<Person name="Jenn Mueng" position="Web Development" imageSrc="/people/jenn.jpg" />
 			</div>
 		</div>
 	);

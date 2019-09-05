@@ -21,7 +21,6 @@
 		"react-helmet": "^5.2.1",
 		"react-markdown": "^4.1.0",
 		"react-router-dom": "^5.0.1",
-		"react-scripts": "^3.1.1",
 		"sass-loader": "^7.3.1",
 		"webpack": "4.39.1"
 	},
@@ -37,18 +36,6 @@
 	},
 	"eslintConfig": {
 		"extends": "react-app"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
 	},
 	"devDependencies": {
 		"eslint": "^6.2.2",

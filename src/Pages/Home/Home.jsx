@@ -1,5 +1,5 @@
-import React, { useRef, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React, { useRef, useEffect } from './node_modules/react';
+import PropTypes from './node_modules/prop-types';
 
 import './Home.css';
 import Header from '../../Components/Header/Header';

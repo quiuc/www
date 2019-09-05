@@ -24,3 +24,5 @@ yarn-error.log*
 
 # gatsby
 .cache
+# ignored because gatsby copies static folder to public.
+public

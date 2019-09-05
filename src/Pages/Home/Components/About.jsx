@@ -3,9 +3,9 @@ import Markdown from 'react-markdown';
 import { Link } from 'react-router-dom';
 
 import './About.css';
-import aboutMdRef from '../resources/about.md';
+/* import aboutMdRef from '../resources/about.md';
 import workshopsMdRef from '../resources/workshops.md';
-import researchMdRef from '../resources/research.md';
+import researchMdRef from '../resources/research.md'; */
 // import Button from '../../../Components/boilerplate/Button';
 
 const About = (props, ref) => {
