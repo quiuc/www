@@ -11,6 +11,27 @@ const Calendar = (props, ref) => {
 	const upcomingEvents = events.filter(event => moment(event.date).isSameOrAfter(moment.now()));
 	return (
 		<div ref={ref} className="sectionContainer unboundedHeightSection">
+			<div className="eventSection upcomingEvents">
+				<h3>Upcoming Events</h3>
+				{upcomingEvents.length > 0 ? (
+					upcomingEvents.map(event => (
+						<EventCard
+							key={event.id}
+							title={event.title}
+							date={event.date}
+							locationText={event.location.text}
+							description={event.description}
+						/>
+					))
+				) : (
+					<div className="noUpcomingEventsText">
+						No upcoming events, hold on tight!
+						<br />
+						{"If you can't wait, "}
+						<a href="https://quiuc.slack.com">join our slack</a>.
+					</div>
+				)}
+			</div>
 			<div className="eventsContainer">
 				<div className="eventSection pastEvents">
 					<h3>Past Events</h3>
@@ -23,27 +44,6 @@ const Calendar = (props, ref) => {
 							description={event.description}
 						/>
 					))}
-				</div>
-				<div className="eventSection upcomingEvents">
-					<h3>Upcoming Events</h3>
-					{upcomingEvents.length > 0 ? (
-						upcomingEvents.map(event => (
-							<EventCard
-								key={event.id}
-								title={event.title}
-								date={event.date}
-								locationText={event.location.text}
-								description={event.description}
-							/>
-						))
-					) : (
-						<div className="noUpcomingEventsText">
-							No upcoming events, hold on tight!
-							<br />
-							{"If you can't wait, "}
-							<a href="https://quiuc.slack.com">join our slack</a>.
-						</div>
-					)}
 				</div>
 			</div>
 		</div>

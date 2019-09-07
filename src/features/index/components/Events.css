@@ -8,7 +8,8 @@
 
 .noUpcomingEventsText {
 	color: rgba(255, 255, 255, 0.4);
-	margin-top: 3em;
+	margin-top: 24pt;
+	margin-bottom: 24pt;
 }
 
 .eventSection {
@@ -17,12 +18,6 @@
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-}
-
-.pastEvents {
-}
-
-.upcomingEvents {
 }
 
 @media (max-width: 650px) {
