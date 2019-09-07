@@ -1,3 +1,7 @@
+---
+title: 'about-0'
+---
+
 # About QUIUC
 
 QUIUC was started in Spring 2019 to establish a community of students, faculty, and

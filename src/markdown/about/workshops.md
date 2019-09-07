@@ -1,3 +1,7 @@
+---
+title: 'about-1'
+---
+
 # Educational Workshops
 
 Within QUIUC, we develop and put on educational workshops with the goal of building

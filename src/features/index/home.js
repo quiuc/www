@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
 
 import './Home.css';
 import Header from '../../components/Header/Header';
@@ -68,19 +67,5 @@ Home.propTypes = {
 		pathname: PropTypes.string.isRequired
 	}
 };
-
-export const query = graphql`
-	query {
-		allMarkdownRemark {
-			totalCount
-			edges {
-				node {
-					id
-					excerpt
-				}
-			}
-		}
-	}
-`;
 
 export default Home;

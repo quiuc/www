@@ -1,3 +1,7 @@
+---
+title: 'about-2'
+---
+
 # Research Projects
 
 In tandem with our educational workshops we support project teams interested in
