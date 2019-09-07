@@ -1,7 +1,20 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require('path');
 
-// You can delete this file if you're not using it
+// routes that should point to the index page
+const INDEX_REDIRECT_ROUTES = ['/about', '/people', '/events', '/contact'];
+
+exports.createPages = async ({ actions }) => {
+	const { createPage } = actions;
+
+	// Create pages for each route that direct to the index page.
+	const IndexPage = path.resolve('src/pages/index.js');
+	INDEX_REDIRECT_ROUTES.forEach(route => {
+		createPage({
+			path: route,
+			component: IndexPage,
+			context: {
+				path: route
+			}
+		});
+	});
+};
