@@ -26,3 +26,6 @@ yarn-error.log*
 .cache
 # ignored because gatsby copies static folder to public.
 public
+
+#vscode
+.vscode
