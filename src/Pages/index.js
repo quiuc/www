@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 
 import '../features/home/home.css';
@@ -48,6 +49,22 @@ const Home = props => {
 
 	return (
 		<div className="screenContainer">
+			<Helmet>
+				<meta charSet="utf-8" />
+				<title>QUIUC - Quantum Computing @ UIUC</title>
+				<meta
+					name="description"
+					content="The first and only undergraduate quantum computing organization at the University of Illinois Urbana-Champaign."
+				/>
+				<link rel="canonical" href="%PUBLIC_URL%" />
+				<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+				<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+				<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+				<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+				<meta name="msapplication-TileColor" content="#da532c" />
+				<meta name="theme-color" content="#ffffff" />
+			</Helmet>
 			<PopupOverlay>
 				<div className="background" />
 				<Header />
