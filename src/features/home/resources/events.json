@@ -24,7 +24,7 @@
 			"date": "2019-09-08T15:00:00-05:00",
 			"description": "Learn or refresh on Python syntax and data structures.",
 			"location": {
-				"text": "Siebel Room 1109"
+				"text": "Siebel Room 1105"
 			}
 		},
 		{
@@ -33,7 +33,7 @@
 			"date": "2019-09-08T16:00:00-05:00",
 			"description": "Learn the basics of version control for working in teams. Please install Git beforehand and create an account at https://www.github.com",
 			"location": {
-				"text": "Siebel Room 1109"
+				"text": "Siebel Room 1105"
 			}
 		}
 	]
