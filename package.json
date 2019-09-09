@@ -1,6 +1,6 @@
 {
 	"name": "QUIUC",
-	"version": "0.5.0",
+	"version": "0.5.3",
 	"private": false,
 	"homepage": "https://www.quiuc.org",
 	"dependencies": {
