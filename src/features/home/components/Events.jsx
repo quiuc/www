@@ -7,10 +7,7 @@ import './Events.css';
 import { events } from '../resources/events.json';
 
 const Calendar = (props, ref) => {
-	const pastEvents = events
-		.filter(event => moment(event.date).isBefore(moment.now()))
-		.slice(-2)
-		.reverse();
+	const pastEvents = events.filter(event => moment(event.date).isBefore(moment.now())).slice(0, 2);
 	const upcomingEvents = events.filter(event => moment(event.date).isSameOrAfter(moment.now()));
 	return (
 		<div ref={ref} className="sectionContainer unboundedHeightSection">
