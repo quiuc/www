@@ -28,12 +28,12 @@
 	"scripts": {
 		"build": "gatsby build",
 		"dev": "gatsby develop",
-		"format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-		"start": "yarn develop",
+		"format": "prettier --write \"src/**/*.{js,jsx,json,md}\"",
+		"start": "gatsby develop",
 		"serve": "gatsby serve",
 		"predeploy": "yarn build --prefix-paths",
 		"deploy": "gh-pages -d public",
-		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+		"commit": "yarn format && git add . && git commit && git push"
 	},
 	"eslintConfig": {
 		"extends": "react-app"

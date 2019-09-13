@@ -35,6 +35,24 @@
 			"location": {
 				"text": "Siebel Room 1105"
 			}
+		},
+		{
+			"id": "5",
+			"title": "General Projects Meeting",
+			"date": "2019-09-15T13:00:00-05:00",
+			"description": "Don't worry if you couldn't make it last week! Still plenty of time to join a project group or start a new one",
+			"location": {
+				"text": "Siebel Room 1105"
+			}
+		},
+		{
+			"id": "6",
+			"title": "QUIUC x ADSA - Python Crash Course (Part 2)",
+			"date": "2019-09-15T15:00:00-05:00",
+			"description": "Learn or refresh on Python syntax and data structures.",
+			"location": {
+				"text": "Siebel Room 1105"
+			}
 		}
 	]
 }
