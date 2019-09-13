@@ -4533,9 +4533,9 @@
 		},
 		222: function(e) {
 			e.exports = JSON.parse(
-				'{"a":[{"id":"1","title":"First General Meeting","date":"2019-09-01T16:00:00-05:00","description":"Learn more about QUIUC, our open leadership positions, and what you can do to participate.","location":{"text":"Siebel Room 1105"}},{"id":"2","title":"First Projects Meeting","date":"2019-09-08T13:00:00-05:00","description":"Come in with ideas and we\'ll vote on the best and form into teams!","location":{"text":"Siebel Room 1105"}},{"id":"3","title":"QUIUC x ADSA - Python Crash Course (Part 1)","date":"2019-09-08T15:00:00-05:00","description":"Learn or refresh on Python syntax and data structures.","location":{"text":"Siebel Room 1105"}},{"id":"4","title":"QUIUC x ADSA - Git Crash Course","date":"2019-09-08T16:00:00-05:00","description":"Learn the basics of version control for working in teams. Please install Git beforehand and create an account at https://www.github.com","location":{"text":"Siebel Room 1105"}}]}'
+				'{"a":[{"id":"1","title":"First General Meeting","date":"2019-09-01T16:00:00-05:00","description":"Learn more about QUIUC, our open leadership positions, and what you can do to participate.","location":{"text":"Siebel Room 1105"}},{"id":"2","title":"First Projects Meeting","date":"2019-09-08T13:00:00-14:00","description":"Come in with ideas and we\'ll vote on the best and form into teams!","location":{"text":"Siebel Room 1105"}},{"id":"3","title":"QUIUC x ADSA - Python Crash Course (Part 1)","date":"2019-09-08T15:00:00-16:00","description":"Learn or refresh on Python syntax and data structures.","location":{"text":"Siebel Room 1109"}},{"id":"4","title":"QUIUC x ADSA - Git Crash Course","date":"2019-09-08T15:00:00-16:00","description":"Learn the basics of version control for working in teams. Please install Git beforehand!","location":{"text":"Siebel Room 1109"}}]}'
 			);
 		}
 	}
 ]);
-//# sourceMappingURL=component---src-pages-index-js-2ee9fecf551239c6d998.js.map
+//# sourceMappingURL=component---src-pages-index-js-f8ba334acfd1d3910f5e.js.map
