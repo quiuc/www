@@ -39,7 +39,7 @@ const PopupOverlay = props => {
 };
 
 PopupOverlay.propTypes = {
-	children: PropTypes.element
+	children: PropTypes.array
 };
 
 export const PopupContext = createContext({

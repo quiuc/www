@@ -11,10 +11,7 @@ exports.createPages = async ({ actions }) => {
 	INDEX_REDIRECT_ROUTES.forEach(route => {
 		createPage({
 			path: route,
-			component: IndexPage,
-			context: {
-				path: route
-			}
+			component: IndexPage
 		});
 	});
 };

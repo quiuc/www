@@ -13,7 +13,7 @@ import PopupOverlay from '../components/boilerplate/Popup';
 
 const Home = props => {
 	// use the routeName to determine where to scroll to.
-	const routeName = props.location.pathname.split('/')[1];
+	// const routeName = props.location.pathname.split('/')[1];
 
 	const aboutRef = useRef(null);
 	const peopleRef = useRef(null);
@@ -21,31 +21,33 @@ const Home = props => {
 	const contactRef = useRef(null);
 
 	useEffect(() => {
+		// This doesn't work if the pathname doesn't change**
+		const routeName = props.location.pathname.split('/')[1];
 		switch (routeName) {
-			case 'about': {
+			case 'about':
 				aboutRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
 				window.scrollBy(0, -86); // offset header height
 				break;
-			}
-			case 'people': {
+
+			case 'people':
 				peopleRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
 				window.scrollBy(0, -86); // offset header height
 				break;
-			}
-			case 'events': {
+
+			case 'events':
 				eventsRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
 				window.scrollBy(0, -86); // offset header height
 				break;
-			}
-			case 'contact': {
+
+			case 'contact':
 				contactRef.current.scrollIntoView({ behavior: 'auto', block: 'end' });
 				break;
-			}
+
 			default:
 				window.scrollTo(0, 0);
 				break;
 		}
-	});
+	}, [props.location.pathname]);
 
 	return (
 		<div className="screenContainer">

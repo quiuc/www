@@ -16,6 +16,9 @@ const About = (props, ref) => {
 					allMarkdownRemark(sort: { fields: frontmatter___title }) {
 						nodes {
 							html
+							frontmatter {
+								title
+							}
 						}
 					}
 				}
@@ -34,7 +37,7 @@ const About = (props, ref) => {
 							return (
 								<div
 									className="aboutSection"
-									key={node.id}
+									key={node.frontmatter.title}
 									dangerouslySetInnerHTML={{ __html: node.html }}
 								/>
 							);

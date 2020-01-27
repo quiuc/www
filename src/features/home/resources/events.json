@@ -53,6 +53,24 @@
 			"location": {
 				"text": "Siebel Room 1105"
 			}
+		},
+		{
+			"id": "7",
+			"title": "First General Meeting",
+			"date": "2020-01-26T16:00:00-05:00",
+			"description": "Learn more about QUIUC, our open leadership positions, and what you can do to participate.",
+			"location": {
+				"text": "Siebel Room 1103"
+			}
+		},
+		{
+			"id": "8",
+			"title": "Weekly Projects Meeting",
+			"date": "2020-02-02T16:00:00-05:00",
+			"description": "Don't worry if you couldn't make it last week! Still plenty of time to join a project group or start a new one",
+			"location": {
+				"text": "Siebel Room 1103"
+			}
 		}
 	]
 }
