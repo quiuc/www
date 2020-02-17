@@ -22,7 +22,7 @@ const Home = props => {
 
 	useEffect(() => {
 		// This doesn't work if the pathname doesn't change**
-		const routeName = props.location.pathname.split('/')[1];
+		const routeName = props.path.split('/')[1];
 		switch (routeName) {
 			case 'about':
 				aboutRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
@@ -47,7 +47,7 @@ const Home = props => {
 				window.scrollTo(0, 0);
 				break;
 		}
-	}, [props.location.pathname]);
+	}, [props.path]);
 
 	return (
 		<div className="screenContainer">
@@ -82,9 +82,7 @@ const Home = props => {
 };
 
 Home.propTypes = {
-	location: {
-		pathname: PropTypes.string.isRequired
-	}
+	path: PropTypes.string.isRequired
 };
 
 export default Home;
