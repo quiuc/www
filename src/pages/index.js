@@ -13,7 +13,6 @@ import PopupOverlay from '../components/boilerplate/Popup';
 
 const Home = props => {
 	// use the routeName to determine where to scroll to.
-	// const routeName = props.location.pathname.split('/')[1];
 
 	const aboutRef = useRef(null);
 	const peopleRef = useRef(null);
@@ -21,7 +20,6 @@ const Home = props => {
 	const contactRef = useRef(null);
 
 	useEffect(() => {
-		// This doesn't work if the pathname doesn't change**
 		const routeName = props.path.split('/')[1];
 		switch (routeName) {
 			case 'about':
