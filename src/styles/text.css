@@ -23,6 +23,7 @@ p {
 a {
 	color: #c96542;
 	font-weight: 600;
+	cursor: pointer;
 }
 
 .orangeHighlight {

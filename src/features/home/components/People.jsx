@@ -11,7 +11,12 @@ const People = (props, ref) => {
 				<Person name="Graeme Jacobson" position="Co-Chair" imageSrc="/people/graeme.jpg" />
 				<Person name="Bailey Tincher" position="Co-Chair" imageSrc="/people/bailey.jpg" />
 				<Person name="Guangkuo Liu" position="Education Committee" imageSrc="/people/guangkuo.jpg" />
-				<Person name="Jenn Mueng" position="Web Development" imageSrc="/people/jenn.jpg" />
+				<Person
+					name="Jenn Mueng"
+					position="Web Development"
+					imageSrc="/people/jenn.jpg"
+					resumeLink="https://jennmueng.com/resume"
+				/>
 				<Person name="Ajay Arasanipalai" position="" imageSrc="" />
 				<Person name="David Flint" position="" imageSrc="/people/david.jpg" />
 			</div>

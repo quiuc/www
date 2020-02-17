@@ -27,6 +27,10 @@
 	text-align: left;
 }
 
+.resumeLink {
+	font-size: 0.8em;
+}
+
 @media (max-width: 730px) {
 	.personCard {
 		flex-basis: 28%;
