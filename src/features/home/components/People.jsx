@@ -15,7 +15,7 @@ const People = (props, ref) => {
 					name="Jenn Mueng"
 					position="Web Development"
 					imageSrc="/people/jenn.jpg"
-					resumeLink="https://jennmueng.com/resume"
+					resumeLink="https://jennmueng.com/resume.pdf"
 				/>
 				<Person name="Ajay Arasanipalai" position="" imageSrc="/people/profileBasic.jpg" />
 				<Person name="David Flint" position="" imageSrc="/people/david.jpg" />
