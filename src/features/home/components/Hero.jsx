@@ -8,8 +8,7 @@ const Hero = () => {
 		<div className="hero sectionContainer">
 			<div className="heroTitleArea">
 				<h1>
-					The first and only undergraduate quantum computing organization at the{' '}
-					<span className="orangeHighlight">University of Illinois</span>
+					Quantum Computing @ <span className="orangeHighlight">UIUC</span>
 				</h1>
 				<p>Aiming to eliminate the barrier of entry into the field for students of all backgrounds.</p>
 				<div className="heroButtonPositioner">
