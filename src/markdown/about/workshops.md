@@ -1,13 +1,17 @@
 ---
-title: 'about-1'
+title: 'about-2'
 ---
 
 # Educational Workshops
 
-Within QUIUC, we develop and put on educational workshops with the goal of building
+<!-- Within QUIUC, we develop and put on educational workshops with the goal of building
 up our members with enough knowledge to work on future research projects. We cater
 to two different paths: crash courses and topic groups.
+ -->
 
+Currently, in-person workshops have been put on hold due to the COVID-19 pandemic. Virtual workshops are in the works, though, so stay tuned!
+
+<!--
 &nbsp;
 
 The crash course series focuses on solidifying the introductory and pre-requisite material for those new
@@ -26,3 +30,4 @@ share what they learned can put on a session. The session would consist of a
 presentation to the topic, and an informal group discussion about it. The goal
 of topic groups is to brain storm ideas for new research projects, and explore
 the tools available for these.
+ -->
