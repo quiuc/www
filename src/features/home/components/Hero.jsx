@@ -13,7 +13,7 @@ const Hero = () => {
 				</h1>
 				<p>Aiming to eliminate the barrier of entry into the field for students of all backgrounds.</p>
 				<div className="heroButtonPositioner">
-					<Button text="Join Us" link="https://quiuc.slack.com" />
+					<Button text="Join Us on Discord!" link="https://discord.gg/8bzGnaM" />
 				</div>
 			</div>
 			<img className="heroBlochSphere" src="/blochSphere.png" alt="" />

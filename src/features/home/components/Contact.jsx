@@ -24,6 +24,12 @@ const Contact = (props, ref) => {
 						</p>
 					</div>
 					<div className="socialContact contactSection">
+						<a href="https://discord.gg/8bzGnaM" className="contactRow">
+							Discord
+						</a>
+						<a href="https://quiuc.slack.com" className="contactRow">
+							Slack
+						</a>
 						<a href="https://reddit.com/u/quiuc" className="contactRow">
 							Reddit
 						</a>
@@ -32,9 +38,6 @@ const Contact = (props, ref) => {
 						</a>
 						<a href="https://www.instagram.com/quiuc_/" className="contactRow">
 							Instagram
-						</a>
-						<a href="https://quiuc.slack.com" className="contactRow">
-							Slack
 						</a>
 					</div>
 				</div>
