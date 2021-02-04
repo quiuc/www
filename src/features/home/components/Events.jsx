@@ -31,7 +31,7 @@ const Calendar = (props, ref) => {
 						No upcoming events, hold on tight!
 						<br />
 						{"If you can't wait, "}
-						<a href="https://discord.gg/8bzGnaM">join our discord</a>.
+						<a href="https://discord.gg/PmaXeHPaFs">join our discord</a>.
 					</div>
 				)}
 			</div>

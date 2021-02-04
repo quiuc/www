@@ -24,7 +24,7 @@ const Contact = (props, ref) => {
 						</p>
 					</div>
 					<div className="socialContact contactSection">
-						<a href="https://discord.gg/8bzGnaM" className="contactRow">
+						<a href="https://discord.gg/PmaXeHPaFs" className="contactRow">
 							Discord
 						</a>
 						<a href="https://quiuc.slack.com" className="contactRow">
