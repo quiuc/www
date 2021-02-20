@@ -13,9 +13,9 @@ const Header = () => {
 				<Link to="about">
 					<div className="headerLink">About</div>
 				</Link>
-				<Link to="people">
+				{/* <Link to="people">
 					<div className="peopleLink headerLink">People</div>
-				</Link>
+				</Link> */}
 				<Link to="events">
 					<div className="headerLink">Events</div>
 				</Link>

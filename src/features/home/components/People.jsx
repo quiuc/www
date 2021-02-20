@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+/* import React, { forwardRef } from 'react';
 
 import './People.css';
 import Person from './Person';
@@ -25,3 +25,4 @@ const People = (props, ref) => {
 };
 
 export default forwardRef(People);
+ */

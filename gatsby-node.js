@@ -1,7 +1,7 @@
 const path = require('path');
 
 // routes that should point to the index page
-const INDEX_REDIRECT_ROUTES = ['/about', '/people', '/events', '/contact'];
+const INDEX_REDIRECT_ROUTES = ['/about', /* '/people', */ '/events', '/contact'];
 
 exports.createPages = async ({ actions }) => {
 	const { createPage } = actions;

@@ -6,7 +6,7 @@ import '../features/home/home.css';
 import Header from '../components/Header/Header';
 import Hero from '../features/home/components/Hero';
 import About from '../features/home/components/About';
-import People from '../features/home/components/People';
+// import People from '../features/home/components/People';
 import Events from '../features/home/components/Events';
 import Contact from '../features/home/components/Contact';
 import PopupOverlay from '../components/boilerplate/Popup';
@@ -15,7 +15,7 @@ const Home = props => {
 	// use the routeName to determine where to scroll to.
 
 	const aboutRef = useRef(null);
-	const peopleRef = useRef(null);
+	// const peopleRef = useRef(null);
 	const eventsRef = useRef(null);
 	const contactRef = useRef(null);
 
@@ -27,10 +27,10 @@ const Home = props => {
 				window.scrollBy(0, -86); // offset header height
 				break;
 
-			case 'people':
+			/* case 'people':
 				peopleRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
 				window.scrollBy(0, -86); // offset header height
-				break;
+				break; */
 
 			case 'events':
 				eventsRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
@@ -71,7 +71,7 @@ const Home = props => {
 				<div className="headerOffset" />
 				<Hero />
 				<About ref={aboutRef} />
-				<People ref={peopleRef} />
+				{/* <People ref={peopleRef} /> */}
 				<Events ref={eventsRef} />
 				<Contact ref={contactRef} />
 			</PopupOverlay>
